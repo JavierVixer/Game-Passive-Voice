@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Passive Voice - Negocios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0a7a57" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Passive Voice Quiz</h1>
+    <p class="subtitle">Nivel III · Negocios · EBC</p>
+  </header>
+
+  <main id="app">
+    <section class="hud">
+      <div class="score">
+        <span>Puntos:</span> <strong id="score">0</strong>
+      </div>
+      <div class="progress">
+        <div id="progressBar" class="progress-bar"></div>
+        <span id="progressText" class="progress-text"></span>
+      </div>
+    </section>
+
+    <section id="quiz" class="card">
+      <div id="questionText" class="question"></div>
+      <ul id="choices" class="choices"></ul>
+      <div id="feedback" class="feedback"></div>
+      <div class="controls">
+        <button id="nextBtn" class="btn primary" disabled>Siguiente</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Resultados</h2>
+      <p id="finalSummary"></p>
+      <div id="breakdown" class="breakdown"></div>
+      <button id="restartBtn" class="btn">Volver a jugar</button>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Práctica de Passive Voice — Licenciatura en Negocios</small>
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "canvas-confetti": "https://esm.sh/canvas-confetti@1.6.0"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
